@@ -1,0 +1,14 @@
+{
+    "api": {
+        "version": "v1.1",
+        "endpoint": "data/search",
+        "token": "API_TOKEN"
+    },
+    "appliance": {
+        "address": "127.0.0.1"
+    },
+    "flask": {
+        "host": "0.0.0.0",
+        "port": 8082
+    }
+}

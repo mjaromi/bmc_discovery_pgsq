@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Public Generic Search Query</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+    </head>
+
+    <body>
+        <section class="hero is-primary is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <textarea class="textarea" placeholder="e.g. SEARCH Host WHERE os_type = 'Windows' ORDER BY name SHOW name, ram" rows="20" name="text" id="textsend" onkeyup="success()" form="usrform"></textarea>
+
+                    <form method="POST" id="usrform">
+                        <input type="submit" id="button" value="Run Query" disabled />
+                    </form>
+
+                    <script type="text/javascript">
+                        function success() {
+                            if (document.getElementById("textsend").value === "") {
+                                document.getElementById("button").disabled = true;
+                            } else {
+                                document.getElementById("button").disabled = false;
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
