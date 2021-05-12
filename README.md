@@ -95,6 +95,13 @@ If there will be no results then you will get empty list as a results: `[]`
 
 Otherwise you will see correct results.
 
+# Waypoint
+```
+waypoint install -platform=docker -accept-tos
+waypoint init
+waypoint up
+```
+
 # UI
 ![](pgsq.png)
 
